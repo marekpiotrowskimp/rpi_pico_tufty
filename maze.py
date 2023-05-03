@@ -369,6 +369,12 @@ def start():
     gc.collect()
     ball = Ball(display, buffer, WIDTH, HEIGHT, 8, 8, maze)
     gc.collect()
+    
+display.set_pen(BLUE)
+display.rectangle(50, 100, 220, 34)
+display.set_pen(WHITE)
+display.text("LOADING MAZE...", 55, 105, 220, 3)
+display.update()
 
 start()
 
